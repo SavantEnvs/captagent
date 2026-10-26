@@ -1,0 +1,20 @@
+PUBLISH sip:bob@biloxi.example.com SIP/2.0
+Via: SIP/2.0/UDP pc33.atlanta.example.com;branch=z9hG4bK776asdhds
+To: Bob <sip:bob@biloxi.example.com>
+From: Alice <sip:alice@atlanta.example.com>;tag=1928301774
+Call-ID: a84b4c76e66710@pc33.atlanta.example.com
+CSeq: 314159 PUBLISH
+Contact: <sip:alice@pc33.atlanta.example.com>
+Content-Type: application/sdp
+Content-Length: 385
+
+VQSessionReport: CallTerm
+CallID: a84b4c76e66710@pc33.atlanta.example.com
+LocalMetrics:
+Timestamps:START=2021-01-01T00:00:00Z STOP=2021-01-01T00:01:00Z
+SessionDesc:PT=0 PD=PCMU SR=8000 FD=20 FO=20 PLC=3
+JitterBuffer:JBA=3 JBR=2 JBN=40 JBM=80 JBS=0
+PacketLoss:NLR=5.0 JDR=2.0
+BurstGapLoss:BLD=0 BD=0 GLD=0 GD=0 GMIN=16
+Delay:RTD=20 ESD=10 IAJ=2
+QualityEst:MOSLQ=4.1 MOSCQ=4.0
