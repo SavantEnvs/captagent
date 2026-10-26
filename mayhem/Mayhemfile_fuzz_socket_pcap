@@ -1,0 +1,9 @@
+project: savantenvs/captagent
+target: fuzz_socket_pcap
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_socket_pcap/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_socket_pcap
+    libfuzzer: true
+    timeout: 30
